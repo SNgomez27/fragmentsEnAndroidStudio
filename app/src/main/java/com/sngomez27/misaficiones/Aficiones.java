@@ -41,15 +41,15 @@ public class Aficiones extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_sobre_mi, menu);
         return true;
     }
-    public boolean onOptionsItemSelected(NonNull MenuItem item){
-        int id = items.getItemId();
+    public boolean onOptionsItemSelected(@NonNull  MenuItem item){
+        int id = item.getItemId();
         if ( id == R.id.botonFav){
-            Toast toast = Toast.makeText(this, "como me gustan mis aficiones");
+            Toast toast = Toast.makeText(this, "como me gustan mis aficiones", Toast.LENGTH_SHORT);
             toast.show();
         }
         if ( id == R.id.botonSobreMi) {
-            Intent intent = new Intent(Aficiones.this, Sobremi.class);
-            startActivity(intent);
+            //Intent intent = new Intent(Aficiones.this, Sobremi.class);
+            //startActivity(intent);
         }
         if (id == R.id.botonMycode){
             Intent intent = new Intent(Intent.ACTION_VIEW);
@@ -57,7 +57,7 @@ public class Aficiones extends AppCompatActivity {
             startActivity(intent);
         }
 
-        return super.onOptionsItemSelected(items);
+        return super.onOptionsItemSelected(item);
     }
 }
 

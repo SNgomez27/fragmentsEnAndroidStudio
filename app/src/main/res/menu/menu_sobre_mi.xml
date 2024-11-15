@@ -6,7 +6,6 @@
         android:id="@+id/botonFav"
         android:title="fav"
         android:icon="@drawable/baseline_star_rate_24"
-        android:orderInCategory=""
         app:showAsAction="always"
         />
     <item
