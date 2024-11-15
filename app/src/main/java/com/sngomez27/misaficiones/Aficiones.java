@@ -53,7 +53,7 @@ public class Aficiones extends AppCompatActivity {
         }
         if (id == R.id.botonMycode){
             Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse("laurl"));
+            intent.setData(Uri.parse("https://github.com/SNgomez27"));
             startActivity(intent);
         }
 
