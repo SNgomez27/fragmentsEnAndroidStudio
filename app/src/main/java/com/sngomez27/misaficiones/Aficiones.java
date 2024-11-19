@@ -48,7 +48,7 @@ public class Aficiones extends AppCompatActivity {
             toast.show();
         }
         if ( id == R.id.botonSobreMi) {
-            //Intent intent = new Intent(Aficiones.this, Sobremi.class);
+            //Intent intent = new Intent(Aficiones.this, SobreMi.class);
             //startActivity(intent);
         }
         if (id == R.id.botonMycode){
