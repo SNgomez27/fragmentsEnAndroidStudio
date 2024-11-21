@@ -13,6 +13,11 @@
         android:theme="@style/Theme.MisAficiones"
         tools:targetApi="31">
         <activity
+            android:name=".sobreMi"
+            android:exported="false"
+            android:label="@string/title_activity_sobre_mi"
+            android:theme="@style/Theme.MisAficiones.NoActionBar" />
+        <activity
             android:name=".sobreeMi"
             android:exported="false"
             android:label="@string/title_activity_sobree_mi"
