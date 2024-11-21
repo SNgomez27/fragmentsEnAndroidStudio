@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d34567">
+
+    <ImageView
+        android:id="@+id/imagenAsado"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/Asado"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-56dp" />
+
+    <TextView
+        android:layout_width="345dp"
+        android:layout_height="152dp"
+        android:layout_marginRight="15dp"
+        android:text="El asado argentino se hace con brasas abundantes y manteniendo constante la temperatura del fuego"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imagenAsado"
+        app:layout_constraintVertical_bias="0.588" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
