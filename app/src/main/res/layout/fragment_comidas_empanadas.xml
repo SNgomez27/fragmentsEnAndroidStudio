@@ -10,7 +10,7 @@
         android:id="@+id/imagenEmpa"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/Empas"
+        android:src="@drawable/empas"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"

@@ -14,28 +14,28 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.sngomez27.misaficiones.databinding.ActivitySobreeMiBinding;
+import com.sngomez27.misaficiones.ui.frmanager.Paginador_C;
 import com.sngomez27.misaficiones.ui.frmanager.Paginador_SB;
 import com.sngomez27.misaficiones.ui.main.SectionsPagerAdapter;
 import com.sngomez27.misaficiones.databinding.ActivityComidasBinding;
 
 public class comidas extends AppCompatActivity {
 
-    private ActivitySobreeMiBinding binding;
+    private ActivityComidasBinding binding;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
 
-        binding = ActivitySobreeMiBinding.inflate(getLayoutInflater());
+        binding = ActivityComidasBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        Paginador_SB paginadorSb = new Paginador_SB(this,getSupportFragmentManager());
+        Paginador_C paginadorC = new Paginador_C(this,getSupportFragmentManager());
         ViewPager viewPager = binding.viewPager;
-        viewPager.setAdapter(paginadorSb);
-
-        TabLayout tabLayout = binding.textoTipsComidas;
-        tabLayout.setupWithViewPager(viewPager);
+        viewPager.setAdapter(paginadorC);
+    TabLayout tabLayout = binding.tab;
+    tabLayout.setupWithViewPager(viewPager);
 
     }
 
